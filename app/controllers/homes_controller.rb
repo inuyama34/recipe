@@ -1,5 +1,5 @@
 class HomesController < ApplicationController
   def index
-    @homes= Home.all
+     @messages = Message.all.page(params[:page]).per(5)
   end
 end

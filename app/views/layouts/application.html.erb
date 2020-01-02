@@ -9,7 +9,10 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class = "backcolor">
+
+
+    <%= render "layouts/flash_messages"%>
     <%= yield %>
   </body>
 </html>

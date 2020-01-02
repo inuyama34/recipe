@@ -1,5 +1,12 @@
-<h1>recipe一覧</h1>
-<% @homes.each do |home|%>
-<%= home.content%>
 
-<%end%>
+<%=link_to"Enjoy cooking!!", new_message_path, class: "logo"%>
+ <img src="<%= asset_path "sample.jpg" %>"  class ="recipe">
+  
+<%= render "messages/messages", messages: @messages %>
+
+<div class="paige">
+  <%= paginate @messages , class: "page"%>
+</div>
+
+
+ 

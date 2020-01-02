@@ -1,0 +1,17 @@
+
+<a class="brand" href="/">Recipe</a>
+
+<div class= "message">
+    <%= image_tag @message.image.url, :size =>'410x300' %>
+    <h1><%= @message.recipe%></h1>
+</div>
+  <div class= "tukurikata">
+    <div class= "tukurikata2">
+      <%=@message.content%>
+    </div>
+  </div>
+
+<% if false %>
+<%= link_to "recipe編集",edit_message_path%>
+<%= link_to 'このrecipeを削除する', @message, method: :delete, data: { confirm: '美味しくなかった？' } %>
+<%end%>

@@ -1,0 +1,15 @@
+
+
+
+
+<div = class="card">
+ <% messages.each do |message|%>
+   <%= link_to(message_path(message)) do %>
+   <%= image_tag message.image.url, :size =>'500x300',class:"image" %>
+   <%end%>
+<%end%>
+</div>
+
+
+
+
